@@ -20,16 +20,16 @@ public class map extends ReactActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
-        mMapView = findViewById(R.id.mapView);
-        btnSend=findViewById(R.id.btnSend);
-        btnSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getReactInstanceManager().getCurrentReactContext()
-                        .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-                        .emit("EventA","nghia");
-            }
-        });
+//        mMapView = findViewById(R.id.mapView);
+//        btnSend=findViewById(R.id.btnSend);
+//        btnSend.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                getReactInstanceManager().getCurrentReactContext()
+//                        .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+//                        .emit("EventA","nghia");
+//            }
+//        });
         setupMap();
     }
 

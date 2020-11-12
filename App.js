@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {StyleSheet, View, Text, Button, NativeModules,DeviceEventEmitter} from 'react-native';
+import Map_Android   from './MapAndroid'
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +28,7 @@ class App extends Component {
                     this.setState({visible: true})
                 }}
             />
+            <Map_Android style={{width:200,height:200,backgroundColor:'#fff000'}}/>
       </View>
     );
   }

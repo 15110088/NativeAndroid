@@ -2,9 +2,12 @@ package com.nativeandroid;
 
 import android.content.Intent;
 
+import androidx.annotation.NonNull;
+
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.uimanager.ThemedReactContext;
 
 import javax.annotation.Nonnull;
 
@@ -26,5 +29,7 @@ public class BasicModule extends ReactContextBaseJavaModule {
             context.startActivity(intent);
         }
     }
+
+
 
 }
